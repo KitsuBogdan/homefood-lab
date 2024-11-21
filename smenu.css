@@ -1,0 +1,113 @@
+
+:root {
+    --turquoise: url('https://th.bing.com/th/id/OIP._oOfjKn2CNtgFjomgg3waAHaHa?rs=1&pid=ImgDetMain');
+    --peach: url('https://th.bing.com/th/id/OIP.GWd5fLBKM0YtF2mIO34U2wHaHa?rs=1&pid=ImgDetMain');
+    --dark-gray: #333; /* Темно-сірий */
+    --light-gray: #f9f9f9; /* Світло-сірий */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+header {
+    background-image: var(--turquoise);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-image: var(--peach);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--peach);
+    padding: 0.5rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--turquoise);
+}
+.hero {
+    text-align: center;
+    background-image: var(--peach);
+    color: var(--dark-gray);
+    padding: 2rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.menu {
+    background-image: url('OIP.png');
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+.menu h2{
+    position: absolute;
+    left: 5px;
+}
+.menu-item {
+    text-align: left;
+    background-color: white;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.menu-category{
+    margin-top: 50px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin: 0.5rem 0;
+    color: var(--dark-gray);
+}
+
+footer {
+    text-align: center;
+    background-image: var(--turquoise);
+    color: white;
+    padding: 1rem 0;
+}
