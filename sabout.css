@@ -1,0 +1,100 @@
+:root {
+    --turquoise: #00bcd4; /* Бірюзовий */
+    --peach: #ffc1a1; /* Персиковий */
+    --dark-gray: #333; /* Темно-сірий */
+    --light-gray: #f9f9f9; /* Світло-сірий */
+    --header-bg: url('https://th.bing.com/th/id/OIP._oOfjKn2CNtgFjomgg3waAHaHa?rs=1&pid=ImgDetMain');
+    --nav-bg: url('https://th.bing.com/th/id/OIP.GWd5fLBKM0YtF2mIO34U2wHaHa?rs=1&pid=ImgDetMain');
+}
+
+body {
+    background-image: url('OIP.png');
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark-gray);
+}
+
+header {
+    background-image: var(--header-bg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav {
+    background-image: var(--nav-bg);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--turquoise);
+}
+
+.about {
+    background-image: url('OIP.png');
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    color: var(--turquoise);
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--dark-gray);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.about ul li {
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.about ul li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background-image: var(--header-bg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
