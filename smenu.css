@@ -137,9 +137,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-    nav {
-        flex-direction: column; /* Вертикальне меню */
-    }
+
 
     nav a {
         margin-bottom: 0.5rem;
