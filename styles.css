@@ -1,52 +1,60 @@
 :root {
-    --turquoise: url('https://th.bing.com/th/id/OIP._oOfjKn2CNtgFjomgg3waAHaHa?rs=1&pid=ImgDetMain');
-    --peach: url('https://th.bing.com/th/id/OIP.GWd5fLBKM0YtF2mIO34U2wHaHa?rs=1&pid=ImgDetMain');
+    --turquoise: #00bcd4; /* Бірюзовий */
+    --peach: #ffc1a1; /* Персиковий */
     --dark-gray: #333; /* Темно-сірий */
     --light-gray: #f9f9f9; /* Світло-сірий */
+    --header-bg: url('https://th.bing.com/th/id/OIP._oOfjKn2CNtgFjomgg3waAHaHa?rs=1&pid=ImgDetMain');
+    --nav-bg: url('https://th.bing.com/th/id/OIP.GWd5fLBKM0YtF2mIO34U2wHaHa?rs=1&pid=ImgDetMain');
 }
 
 body {
+    background-image:url('OIP.png');
+    text-align: center;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--light-gray);
     color: var(--dark-gray);
 }
 
 header {
-    background-image: var(--turquoise);
+    background-image: var(--header-bg);
+    background-size:auto;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5rem;
+    margin: 0;
 }
 
 nav {
+    
+    background-image: var(--nav-bg);
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    background-image: var(--peach);
     padding: 0.5rem 0;
+    gap: 1rem;
 }
 
 nav a {
     text-decoration: none;
     color: var(--dark-gray);
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 8px;
 }
 
 nav a:hover {
-    color: var(--turquoise);
+    color: white;
+    background-color: var(--turquoise);
 }
 
 .hero {
     text-align: center;
-    background-image:  var(--peach);
+    background-image: var(--nav-bg);
     color: var(--dark-gray);
     padding: 2rem 1rem;
 }
